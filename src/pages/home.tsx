@@ -7,15 +7,14 @@ export const Home: React.FC = () => {
 
 
   return (
-    <div className="d-flex flex-column">
+    <div className="d-flex flex-column ">
       <FormImages
         imageUpload={imageUpload}
         setImageUpload={setImageUpload}
         imageList={imagesList}
         setImagesList={setImagesList}
       />
-      <hr className=" mt-3 mb-4 " />
-      <List imagesList={imagesList} />
+      <List imagesList={imagesList} setImagesList={setImagesList} />
     </div>
   );
 };
