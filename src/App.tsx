@@ -4,7 +4,7 @@ import { Homelayout } from './layout'
 function App() {
 
   return (
-    <div className="App">
+    <div className="App ">
      <Homelayout />
     </div>
   )
