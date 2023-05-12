@@ -5,7 +5,7 @@ import { storage } from "../firebase/firebase";
 interface Props {
   imagesList: string[] | null | undefined;
   setImagesList: ( value: React.SetStateAction<string[] | null | undefined>) => void;
-}
+};
 
 export const List: React.FC<Props> = (props) => {
   const { imagesList, setImagesList } = props;
