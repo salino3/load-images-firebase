@@ -17,7 +17,6 @@ export const FormImages: React.FC<Props> = (props) => {
     
   const imageListRef = ref(storage, "images/");
 
-
   const uploadImage: React.FormEventHandler<HTMLFormElement> = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
@@ -45,7 +44,7 @@ export const FormImages: React.FC<Props> = (props) => {
 
 
   return (
-    <form onSubmit={uploadImage} className='border border-info rounded border-2 w-75 m-auto p-3'>
+    <form onSubmit={uploadImage} className='border border-info rounded border-2 w-auto w-100 m-auto  p-3'>
       <input
         required
         onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
